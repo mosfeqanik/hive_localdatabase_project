@@ -36,8 +36,8 @@ class _HomePageState extends State<HomePage> {
         "khanaCheifNID": value['khanaCheifNID'],
         "khanaCheifDOB": value['khanaCheifDOB'],
         "khanaCheifNameBN": value['khanaCheifNameBN'],
-        "KhanaCheifNameENG": value['KhanaCheifNameENG'],
-        "KhanaCheifFatherNameBN": value['KhanaCheifFatherNameBN'],
+        "khanaCheifNameENG": value['khanaCheifNameENG'],
+        "khanaCheifFatherNameBN": value['khanaCheifFatherNameBN'],
         "KhanaCheifFatherNameENG": value['KhanaCheifFatherNameENG'],
         "KhanaCheifMotherNameBN": value['KhanaCheifMotherNameBN'],
         "KhanaCheifMotherNameENG": value['KhanaCheifMotherNameENG'],
@@ -138,16 +138,16 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _candidateRelationshipWithCheifController =
       TextEditingController();
 
-
+  ///khana cheif
   final TextEditingController _khanaCheifNIDController =
       TextEditingController();
   final TextEditingController _khanaCheifDOBController =
       TextEditingController();
   final TextEditingController _khanaCheifNameBNController =
   TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
+  final TextEditingController _khanaCheifNameENGController =
   TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
+  final TextEditingController _khanaCheifFatherNameBNController =
   TextEditingController();
   final TextEditingController _khanaCheifDOBController =
   TextEditingController();
@@ -186,6 +186,11 @@ class _HomePageState extends State<HomePage> {
 
       _khanaCheifNIDController.text = existingItem['khanaCheifNID'];
       _khanaCheifDOBController.text = existingItem['khanaCheifDOB'];
+      _khanaCheifNameBNController.text = existingItem['khanaCheifNameBN'];
+      _khanaCheifNameENGController.text = existingItem['khanaCheifNameENG'];
+
+
+
     }
 
     showModalBottomSheet(
@@ -230,9 +235,19 @@ class _HomePageState extends State<HomePage> {
               controller: _khanaCheifNIDController,
               decoration: const InputDecoration(hintText: '_khana Cheif NID'),
             ),
+            const SizedBox(
+              height: 10,
+            ),
             TextField(
               controller: _khanaCheifNameBNController,
-              decoration: const InputDecoration(hintText: '_khana Cheif Name BN'),
+              decoration: const InputDecoration(hintText: 'khana Cheif Name BN'),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            TextField(
+              controller: _khanaCheifNameENGController,
+              decoration: const InputDecoration(hintText: '_khana Cheif Name English'),
             ),
             const SizedBox(
               height: 20,
@@ -248,7 +263,11 @@ class _HomePageState extends State<HomePage> {
                     "candidateRelationshipWithCheif":
                         _candidateRelationshipWithCheifController.text,
                     "khanaCheifNID": _khanaCheifNIDController.text,
-                    "khanaCheifNameBNController": _khanaCheifNameBNController.text,
+                    "khanaCheifNameBN": _khanaCheifNameBNController.text,
+
+                    "khanaCheifNameENG": _khanaCheifNameENGController.text,
+
+
                   });
                 }
 
@@ -260,8 +279,12 @@ class _HomePageState extends State<HomePage> {
                         _candidateMobileNumberController.text.trim(),
                     'candidateRelationshipWithCheif':
                         _candidateRelationshipWithCheifController.text.trim(),
+
+                    ///Khana cheif
                     'khanaCheifNID': _khanaCheifNIDController.text.trim(),
-                    "khanaCheifNameBNController": _khanaCheifNameBNController.text.trim(),
+                    "khanaCheifNameBN": _khanaCheifNameBNController.text.trim(),
+                    "khanaCheifNameENG": _khanaCheifNameENGController.text.trim(),
+
 
                   });
                 }
@@ -272,6 +295,9 @@ class _HomePageState extends State<HomePage> {
                 _candidateRelationshipWithCheifController.text = '';
 
                 _khanaCheifNIDController.text = '';
+                _khanaCheifNameBNController.text = '';
+                _khanaCheifNameENGController.text='';
+
 
                 Navigator.of(context).pop(); // Close the bottom sheet
               },
