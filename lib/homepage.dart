@@ -38,60 +38,60 @@ class _HomePageState extends State<HomePage> {
         "khanaCheifNameBN": value['khanaCheifNameBN'],
         "khanaCheifNameENG": value['khanaCheifNameENG'],
         "khanaCheifFatherNameBN": value['khanaCheifFatherNameBN'],
-        "KhanaCheifFatherNameENG": value['KhanaCheifFatherNameENG'],
-        "KhanaCheifMotherNameBN": value['KhanaCheifMotherNameBN'],
-        "KhanaCheifMotherNameENG": value['KhanaCheifMotherNameENG'],
-        "KhanaCheifGender": value['KhanaCheifGender'],
-        "KhanaCheifMaritalStatus": value['KhanaCheifMaritalStatus'],
-        "KhanaCheifMobileNumber": value['KhanaCheifMobileNumber'],
-        "KhanaVillageName": value['KhanaVillageName'],
-        "KhanaParaName": value['KhanaParaName'],
-        "KhanaHouseName": value['KhanaHouseName'],
-        "KhanaPostCode": value['KhanaPostCode'],
-        "KhanaHoldingNumber": value['KhanaHoldingNumber'],
-        "KhanaHouseLocationDetails": value['KhanaHouseLocationDetails'],
+        "khanaCheifFatherNameENG": value['khanaCheifFatherNameENG'],
+        "khanaCheifMotherNameBN": value['khanaCheifMotherNameBN'],
+        "khanaCheifMotherNameENG": value['khanaCheifMotherNameENG'],
+        "khanaCheifGender": value['khanaCheifGender'],
+        "khanaCheifMaritalStatus": value['khanaCheifMaritalStatus'],
+        "khanaCheifMobileNumber": value['khanaCheifMobileNumber'],
+        "khanaVillageName": value['khanaVillageName'],
+        "khanaParaName": value['khanaParaName'],
+        "khanaHouseName": value['khanaHouseName'],
+        "khanaPostCode": value['khanaPostCode'],
+        "khanaHoldingNumber": value['khanaHoldingNumber'],
+        "khanaHouseLocationDetails": value['khanaHouseLocationDetails'],
 
         ///1st page Done
 
         ///House material Detail
-        "KhanaHouseFloorDetails": value['KhanaHouseFloorDetails'],
-        "KhanaHouseWallDetails": value['KhanaHouseWallDetails'],
-        "KhanaHouseCeilingDetails": value['KhanaHouseCeilingDetails'],
+        "khanaHouseFloorDetails": value['khanaHouseFloorDetails'],
+        "khanaHouseWallDetails": value['khanaHouseWallDetails'],
+        "khanaHouseCeilingDetails": value['khanaHouseCeilingDetails'],
 
         ///House benefits Detail
-        "KhanaWaterSource": value['KhanaWaterSource'],
-        "KhanaToiletDetail": value['KhanaToiletDetail'],
-        "KhanaElectricityDetails": value['KhanaElectricityDetails'],
+        "khanaWaterSource": value['khanaWaterSource'],
+        "khanaToiletDetail": value['khanaToiletDetail'],
+        "khanaElectricityDetails": value['khanaElectricityDetails'],
 
 
         ///House Property Detail
-        "KhanaPropertyRickshawDetails": value['KhanaPropertyRickshawDetails'],
-        "KhanaPropertyElectricVehicleDetails":
-            value['KhanaPropertyElectricVehicleDetails'],
-        "KhanaPropertyMotorDetails": value['KhanaPropertyMotorDetails'],
-        "KhanaPropertyCNGDetails": value['KhanaPropertyCNGDetails'],
-        "KhanaPropertyMobileDetails": value['KhanaPropertyMobileDetails'],
-        "KhanaPropertyTelevisionDetails":
-            value['KhanaPropertyTelevisionDetails'],
-        "KhanaPropertyRefrigeratorDetails":
-            value['KhanaPropertyRefrigeratorDetails'],
-        "KhanaPropertyBostovitaDetails": value['KhanaPropertyBostovitaDetails'],
-        "KhanaPropertyKrishiDetails": value['KhanaPropertyKrishiDetails'],
-        "KhanaPropertyOKrishiDetails": value['KhanaPropertyOKrishiDetails'],
-        "KhanaPropertyDomesticatedAnimalsDetails":
-            value['KhanaPropertyDomesticatedAnimalsDetails'],
+        "khanaPropertyRickshawDetails": value['khanaPropertyRickshawDetails'],
+        "khanaPropertyElectricVehicleDetails":
+            value['khanaPropertyElectricVehicleDetails'],
+        "khanaPropertyMotorDetails": value['khanaPropertyMotorDetails'],
+        "khanaPropertyCNGDetails": value['khanaPropertyCNGDetails'],
+        "khanaPropertyMobileDetails": value['khanaPropertyMobileDetails'],
+        "khanaPropertyTelevisionDetails":
+            value['khanaPropertyTelevisionDetails'],
+        "khanaPropertyRefrigeratorDetails":
+            value['khanaPropertyRefrigeratorDetails'],
+        "khanaPropertyBostovitaDetails": value['khanaPropertyBostovitaDetails'],
+        "khanaPropertyKrishiDetails": value['khanaPropertyKrishiDetails'],
+        "khanaPropertyOKrishiDetails": value['khanaPropertyOKrishiDetails'],
+        "khanaPropertyDomesticatedAnimalsDetails":
+            value['khanaPropertyDomesticatedAnimalsDetails'],
 
 
         ///Help From GOVT
-        "KhanaHelpFromGovtDetails": value['KhanaHelpFromGovtDetails'],
+        "khanaHelpFromGovtDetails": value['khanaHelpFromGovtDetails'],
 
         ///INCOME SOURCE
-        "KhanaIncomeSourceDetails": value['KhanaIncomeSourceDetails'],
-        "KhanaFoodCost": value['KhanaFoodCost'],
-        "KhanaMedicalCost": value['KhanaMedicalCost'],
-        "KhanaEducationCost": value['KhanaEducationCost'],
-        "KhanaOtherCost": value['KhanaOtherCost'],
-        "KhanaGovtHelpCard": value['KhanaGovtHelpCard'],
+        "khanaIncomeSourceDetails": value['khanaIncomeSourceDetails'],
+        "khanaFoodCost": value['khanaFoodCost'],
+        "khanaMedicalCost": value['khanaMedicalCost'],
+        "khanaEducationCost": value['khanaEducationCost'],
+        "khanaOtherCost": value['khanaOtherCost'],
+        "khanaGovtHelpCard": value['khanaGovtHelpCard'],
       };
     }).toList();
 
@@ -149,24 +149,24 @@ class _HomePageState extends State<HomePage> {
   TextEditingController();
   final TextEditingController _khanaCheifFatherNameBNController =
   TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
-  final TextEditingController _khanaCheifDOBController =
-  TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
+  // final TextEditingController _khanaCheifDOBController =
+  // TextEditingController();
 
 
   // This function will be triggered when the floating button is pressed
@@ -280,7 +280,7 @@ class _HomePageState extends State<HomePage> {
                     'candidateRelationshipWithCheif':
                         _candidateRelationshipWithCheifController.text.trim(),
 
-                    ///Khana cheif
+                    ///khana cheif
                     'khanaCheifNID': _khanaCheifNIDController.text.trim(),
                     "khanaCheifNameBN": _khanaCheifNameBNController.text.trim(),
                     "khanaCheifNameENG": _khanaCheifNameENGController.text.trim(),
